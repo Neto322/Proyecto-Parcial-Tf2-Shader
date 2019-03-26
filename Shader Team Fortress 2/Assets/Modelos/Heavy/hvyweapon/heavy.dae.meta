@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 198dba67c9012044597b82123c12bd5e
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: bip_collar_L
     100002: bip_collar_R
@@ -166,7 +166,27 @@ ModelImporter:
     13700002: mesh1
     13700004: mesh2
     13700006: mesh3
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_player_hvyweapon_eyeball_l
+    second: {fileID: 2100000, guid: ebe86b8e89ff9ea49985ede2a292bd29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_player_hvyweapon_eyeball_r
+    second: {fileID: 2100000, guid: ad877b034514d2e4ead79c7db2a3dd1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_player_hvyweapon_heavy_head_red
+    second: {fileID: 2100000, guid: a7e96e7cb5290d04dabd9ffcdfde58c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_player_hvyweapon_hvyweapon_red
+    second: {fileID: 2100000, guid: 246bc21f3b49f9f4ea20764a0fcc6570, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -200,6 +220,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -217,11 +238,16 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -236,7 +262,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

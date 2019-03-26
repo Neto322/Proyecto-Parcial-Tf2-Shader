@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 025e3fe8fb893b746b96bf5a6874f40b
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: bip_collar_L
     100002: bip_collar_R
@@ -147,7 +147,22 @@ ModelImporter:
     13700000: mesh0
     13700002: mesh1
     13700004: mesh2
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_player_engineer_engineer_head_red
+    second: {fileID: 2100000, guid: 9be35e6fd7a8b94449adb489262a7bd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_player_engineer_engineer_mech_hand
+    second: {fileID: 2100000, guid: e81d29d2a6f7c60468a0b2340d1372ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_player_engineer_engineer_red
+    second: {fileID: 2100000, guid: f72fdf9d21b355d4c8d58a8824e178b9, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -181,6 +196,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -198,11 +214,16 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -217,7 +238,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

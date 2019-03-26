@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: c634178961a34994084b3554c529209a
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: bip_collar_L
     100002: bip_collar_R
@@ -176,7 +176,27 @@ ModelImporter:
     13700002: mesh1
     13700004: mesh2
     13700006: mesh3
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_effects_smiley
+    second: {fileID: 2100000, guid: 0044d91a0f5ce9a4ebfb7e802f1fe88e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_player_demo_demoman_head_red
+    second: {fileID: 2100000, guid: c1686acbb7674cc4f93c87a8a1309f89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_player_demo_demoman_red
+    second: {fileID: 2100000, guid: e55bfea1a3475d9418778e70122790ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: models_player_demo_eyeball_r
+    second: {fileID: 2100000, guid: 78471cdffe4e3f648b5235e9c8a63059, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -210,6 +230,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -227,11 +248,16 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -246,7 +272,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
