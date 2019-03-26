@@ -7,9 +7,10 @@
         _MainTex("Textura", 2D) = "white"{}
         
 		_RimColor ("Rim Color", Color) = (1, 1, 1, 1)
-		_RimPower ("Rim Power", Float) = 1.0
+		_RimPower ("Rim Power", Range(-10, 10 )) = 6.5
 
 		_BumpMap ("Normal", 2D) = "bump" {}
+        _NormalStrenght("Normal Strenght", Range(-3, 3)) = 1
 
 		_RampTex ("Ramp", 2D) = "white" {}
 
@@ -22,21 +23,14 @@
 
             float4 _Albedo;
             sampler2D _MainTex;
-            sampler2D _RampTex;
-
+             float4 _RimColor;
+            float _RimPower;
             sampler2D _BumpMap;
             float _NormalStrenght;
+            sampler2D _RampTex;
+           
 
-            float4 _RimColor;
-            float _RimPower;
-
-            struct Input
-            {
-                float2 uv_MainTex;
-                float2 uv_BumpMap;
-                float2 uv_Specular;
-                float3 viewDir;
-            };
+            
 
             float4 LightingTF2(SurfaceOutput s, fixed3 lightDir, fixed atten)
             {
@@ -52,7 +46,12 @@
                 return c;
             }
 
-            
+            struct Input
+            {
+                float2 uv_MainTex;
+                float2 uv_BumpMap;
+                float3 viewDir;
+            };
 
             void surf(Input IN, inout SurfaceOutput o)
             {
